@@ -1,4 +1,8 @@
-*/**
+# Ignore all sub directories 
+/*
+# Don't ignore the .config directory
+!/.config/
+# Ignore unwanted files
 .Xauthority
 .xsession*
 .python*

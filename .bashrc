@@ -12,6 +12,7 @@ alias ls='ls --color=auto'
 alias remove='sudo pacman -Rs'
 alias bashrc="vim ~/.bashrc && . ~/.bashrc" 
 alias ignore="$MRSCRIPT/add2gitignore.sh"
+alias except="$MRSCRIPT/except_from_gitignore.sh"
 alias update="sudo pacman -S --sysupgrade --refresh --refresh"
 alias search="pacman -Ss"
 alias clean="sudo pacman -S --clean"
