@@ -1,0 +1,8 @@
+*/**
+.Xauthority
+.xsession*
+.python*
+.dmrc
+.bash_history
+.lesshst
+.viminfo
