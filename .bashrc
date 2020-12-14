@@ -23,5 +23,6 @@ alias quickshot="maim --select $SHOTS/`date +%s`.png"
 alias oi="$MRSCRIPT/open_image.sh"
 alias i3conf="vim /home/$UTHER/.config/i3/config"
 alias i3reload="i3-msg reload && i3-msg restart"
+alias fixdisplay="xlayoutdisplay"
 PS1='[\u@\h \W]\$ '
 
