@@ -24,5 +24,38 @@ alias oi="$MRSCRIPT/open_image.sh"
 alias i3conf="vim /home/$UTHER/.config/i3/config"
 alias i3reload="i3-msg reload && i3-msg restart"
 alias fixdisplay="xlayoutdisplay"
+alias keycodes='xev | awk -F '\''[ )]+'\'' '\''/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'\'''
+alias untar="tar -xvf"
+source /usr/share/git/completion/git-prompt.sh
+prompt_command () {
+	if [ $? -eq 0 ]; then # set an error string for the prompt, if applicable
+		ERRPROMPT=" "
+	else
+		ERRPROMPT=' -> ($?)'
+	fi
+	if [ "\$(type -t __git_ps1)" ]; then # if we're in a Git repo, show current branch
+		BRANCH="\$(__git_ps1 '[ %s ]')"
+	fi
+	PROMPT='~ '
+	local GREEN="\[\033[0;32m\]"
+	local CYAN="\[\033[0;36m\]"
+	local BCYAN="\[\033[1;36m\]"
+	local BLUE="\[\033[0;34m\]"
+	local GRAY="\[\033[0;37m\]"
+	local DKGRAY="\[\033[1;30m\]"
+	local WHITE="\[\033[1;37m\]"
+	local RED="\[\033[0;31m\]"
+	# return color to Terminal setting for text color
+	local DEFAULT="\[\033[0;39m\]"
+	# set the titlebar to the last 2 fields of pwd
+	local TITLEBAR=`pwd`
+	export PS1="\n${BCYAN}\u${DKGRAY}@${CYAN}\h${RED}${ERRPROMPT}${WHITE}${TITLEBAR} ${GRAY} ${GREEN}${BRANCH}\n${GRAY}${PROMPT}${DEFAULT}"
+}
+
+PROMPT_COMMAND=prompt_command
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 PS1='[\u@\h \W]\$ '
 
