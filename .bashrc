@@ -4,10 +4,12 @@
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
+setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
 UTHER="mrdoor"
 MRSCRIPT="/home/$UTHER/repos/mrscript"
 SHOTS="/home/$UTHER/shots"
 export PATH="$MRSCRIPT:$PATH"
+export TERMINAL="alacritty"
 alias ls='ls --color=auto'
 alias remove='sudo pacman -Rs'
 alias bashrc="vim ~/.bashrc && . ~/.bashrc" 
