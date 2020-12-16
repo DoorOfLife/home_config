@@ -44,7 +44,7 @@ prompt_command () {
 	local BCYAN="\[\033[1;36m\]"
 	local BLUE="\[\033[0;34m\]"
 	local GRAY="\[\033[0;37m\]"
-	local DKGRAY="\[\033[1;30m\]"
+	local DKGRAY="\[\033[1;39m\]" # I changed this to default for now
 	local WHITE="\[\033[1;37m\]"
 	local RED="\[\033[0;31m\]"
 	# return color to Terminal setting for text color
@@ -52,6 +52,7 @@ prompt_command () {
 	# set the titlebar to the last 2 fields of pwd
 	local TITLEBAR=`pwd`
 	export PS1="\n${BCYAN}\u${DKGRAY}@${CYAN}\h${RED}${ERRPROMPT}${WHITE}${TITLEBAR} ${GRAY} ${GREEN}${BRANCH}\n${GRAY}${PROMPT}${DEFAULT}"
+
 }
 
 PROMPT_COMMAND=prompt_command
@@ -59,5 +60,4 @@ PROMPT_COMMAND=prompt_command
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-PS1='[\u@\h \W]\$ '
 
