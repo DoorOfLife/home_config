@@ -44,14 +44,14 @@ prompt_command () {
 	local BCYAN="\[\033[1;36m\]"
 	local BLUE="\[\033[0;34m\]"
 	local GRAY="\[\033[0;37m\]"
-	local DKGRAY="\[\033[1;39m\]" # I changed this to default for now
+	local DKGRAY="\[\033[1;30m\]" # I changed this to default for now
 	local WHITE="\[\033[1;37m\]"
 	local RED="\[\033[0;31m\]"
 	# return color to Terminal setting for text color
 	local DEFAULT="\[\033[0;39m\]"
 	# set the titlebar to the last 2 fields of pwd
 	local TITLEBAR=`pwd`
-	export PS1="\n${BCYAN}\u${DKGRAY}@${CYAN}\h${RED}${ERRPROMPT}${WHITE}${TITLEBAR} ${GRAY} ${GREEN}${BRANCH}\n${GRAY}${PROMPT}${DEFAULT}"
+	export PS1="\n${BLUE}\u${DKGRAY}@${CYAN}\h${RED}${ERRPROMPT}${WHITE}${TITLEBAR} ${GRAY} ${GREEN}${BRANCH}\n${GRAY}${PROMPT}${DEFAULT}"
 
 }
 
