@@ -210,4 +210,4 @@ gaps outer 0
 smart_borders on
 
 
-exec feh --no-xinerama --bg-tile /home/mrdoor/shots/edited/wallpaper_aers.png
+exec feh --no-xinerama --bg-tile /home/mrdoor/shots/reflective
