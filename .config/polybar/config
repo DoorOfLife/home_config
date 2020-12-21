@@ -1,0 +1,26 @@
+[colors]
+background = #282a36
+foreground = #f8f8f2
+
+black = #000000
+red = #ff5555
+green = #50fa7b
+yellow = #f1fa8c
+blue = #bd93f9
+magenta = #ff79c6
+cyan = #8be9fd
+white = #bfbfbf
+
+bblack = #4d4d4d
+bred = #ff6e67
+bgreen = #5af78e
+byellow = #f4f99d
+bblue = #caa9fa
+bmagenta = #ff92d0
+bcyan = #9aedfe
+bwhite = #e6e6e6
+
+[section/base]
+include-file = local
+include-directory = ${vars.polypath}/modules
+include-directory = ${vars.polypath}/bars
