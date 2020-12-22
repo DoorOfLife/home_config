@@ -2,9 +2,10 @@
 inherit = bar/mainbar
 monitor = ${vars.secondary-display}
 
-modules-left = 
+modules-left = quotes-magenta
 modules-center = time
-modules-right = i3
+modules-right = quotes-cyan i3
 
 tray-position = none
+
 

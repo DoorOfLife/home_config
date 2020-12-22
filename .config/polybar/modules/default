@@ -1,4 +1,19 @@
+[module/quotes-magenta]
+type = custom/script
+exec = $HOME/.config/polybar/quotes.sh
+interval = 60
+format = <label>
+label = %output%
+format-font = 2
+format-foreground = ${colors.bmagenta}
 
+[module/quotes-cyan]
+inherit = module/quotes-magenta
+format-foreground = ${colors.bcyan} 
+
+[modules/quotes-blue]
+inherit = module/quotes-magenta
+format-foreground = ${colors.bblue}
 
 [module/disk]
 type = internal/fs
@@ -75,7 +90,7 @@ bar-used-empty-foreground = ${colors.bblack}
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
-format-font = 2
+format-font = 3
 pin-workspaces = true
 enable-scroll = false
 enable-click = false
