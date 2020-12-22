@@ -203,4 +203,4 @@ gaps inner 15
 gaps outer 0
 smart_borders on
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec feh --no-xinerama --bg-tile /home/mrdoor/shots/reflective
+exec feh --no-xinerama --bg-fill /home/mrdoor/shots/edited/electriccolor.jpg

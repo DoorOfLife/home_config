@@ -7,24 +7,24 @@ include-directory = /home/mrdoor/.config/polybar/bars
 include-directory = /home/mrdoor/.config/polybar/local
 
 [colors]
-background = #282a36
-foreground = #f8f8f2
-
-black = #000000
+background = #aa282a36
+foreground = #aaf8f8f2
+opaque-bg = #ff282a36
+black = #bb000000
 red = #ff5555
-green = #50fa7b
-yellow = #f1fa8c
-blue = #bd93f9
-magenta = #ff79c6
-cyan = #8be9fd
-white = #bfbfbf
+green = #ff50fa7b
+yellow = #fff1fa8c
+blue = #ffbd93f9
+magenta = #ffff79c6
+cyan = #ff8be9fd
+white = #ffbfbfbf
 
-bblack = #4d4d4d
-bred = #ff6e67
-bgreen = #5af78e
-byellow = #f4f99d
-bblue = #caa9fa
-bmagenta = #ff92d0
-bcyan = #9aedfe
-bwhite = #e6e6e6
+bblack = #ff4d4d4d
+bred = #ffff6e67
+bgreen = #ff5af78e
+byellow = #fff4f99d
+bblue = #ffcaa9fa
+bmagenta = #ffff92d0
+bcyan = #ff9aedfe
+bwhite = #ffe6e6e6
 
