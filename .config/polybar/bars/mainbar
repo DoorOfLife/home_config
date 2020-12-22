@@ -4,6 +4,8 @@ modules-left = i3 net traffic
 modules-center = time
 modules-right = ram cpu disk
 
+monitor = ${vars.primary-display}
+
 ; Tell the Window Manager not to configure the window.
 ; Use this to detach the bar if your WM is locking its size/position.
 ; Note: With this most WMs will no longer reserve space for 

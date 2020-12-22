@@ -1,0 +1,10 @@
+[bar/secondbar]
+inherit = bar/mainbar
+monitor = ${vars.secondary-display}
+
+modules-left = 
+modules-center = time
+modules-right = i3
+
+tray-position = none
+

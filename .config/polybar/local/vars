@@ -1,3 +1,5 @@
 [vars]
 ethernet = enp0s31f6
+primary-display = DP-0
+secondary-display = HDMI-0
 
