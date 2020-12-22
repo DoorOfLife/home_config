@@ -1,3 +1,11 @@
+include-directory = /home/mrdoor/.config/polybar/modules
+include-directory = /home/mrdoor/.config/polybar/bars
+
+; Including a directory for convenience, a place to put local configurations
+; without having to hardcode more files/directories
+; See the vars file in this dir
+include-directory = /home/mrdoor/.config/polybar/local
+
 [colors]
 background = #282a36
 foreground = #f8f8f2
@@ -20,7 +28,3 @@ bmagenta = #ff92d0
 bcyan = #9aedfe
 bwhite = #e6e6e6
 
-[section/base]
-include-file = local
-include-directory = ${vars.polypath}/modules
-include-directory = ${vars.polypath}/bars
