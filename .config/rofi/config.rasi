@@ -1,6 +1,14 @@
 configuration {
- modi: "window,drun,ssh,combi";
- theme: "lb";
+ modi: "run";
+ theme: "door_lb";
  font: "Hermit 16";
  combi-modi: "window,drun,ssh";
+ lines: 5;
+ show-icons:true;
+ normal-window:false;
+ matching: "fuzzy";
+ width: 25;
+ location: 2;
+ padding: 2;
+ monitor: "-3";
  }
