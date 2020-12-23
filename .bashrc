@@ -25,6 +25,7 @@ alias i3reload="i3-msg reload && i3-msg restart"
 alias fixdisplay="xlayoutdisplay"
 alias keycodes='xev | awk -F '\''[ )]+'\'' '\''/^KeyPress/ { a[NR+2] } NR in a { printf "%-3s %s\n", $5, $8 }'\'''
 alias untar="tar -xvf"
+alias fixkb="setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl"
 source /usr/share/git/completion/git-prompt.sh
 prompt_command () {
 	if [ $? -eq 0 ]; then # set an error string for the prompt, if applicable
