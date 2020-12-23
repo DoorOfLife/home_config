@@ -7,8 +7,7 @@
 # i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-exec-always --no-startup-id killall picom
-exec-always --no-startup-id picom -b --experimental-backends
+exec --no-startup-id picom -b --experimental-backends
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -204,3 +203,4 @@ gaps outer 0
 smart_borders on
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec feh --no-xinerama --bg-fill /home/mrdoor/shots/edited/electriccolor.jpg
+exec --no-startup-id setxkbmap -rules evdev -model evdev -layout us -variant altgr-intl
